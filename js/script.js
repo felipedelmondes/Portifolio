@@ -329,9 +329,23 @@ function setupProfileImagePlaceholder() {
         profileImg.src = createPlaceholder();
     });
     
-    // If src is empty or doesn't exist, use placeholder immediately
-    if (!profileImg.src || profileImg.src.includes('profile.jpg')) {
+    // Check if the image actually exists before using placeholder
+    const img = new Image();
+    img.onload = function() {
+        // Image loaded successfully, keep it
+        profileImg.src = this.src;
+    };
+    img.onerror = function() {
+        // Image failed to load, use placeholder
         profileImg.src = createPlaceholder();
+    };
+    
+    // Only use placeholder if src is empty or default
+    if (!profileImg.src || profileImg.src.includes('undefined') || profileImg.src === window.location.href) {
+        profileImg.src = createPlaceholder();
+    } else {
+        // Try to load the existing src
+        img.src = profileImg.src;
     }
 }
 
