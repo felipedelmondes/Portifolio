@@ -1085,7 +1085,8 @@ p {
 
 /* ===== DARK THEME ENHANCEMENTS ===== */
 .header.scrolled {
-    background: rgba(10, 10, 10, 0.98);
+    background: rgba(18, 18, 18, 0.95);
+    backdrop-filter: blur(10px);
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
 }
 

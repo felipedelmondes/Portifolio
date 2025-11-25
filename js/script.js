@@ -38,15 +38,8 @@ function smoothScrollTo(targetId) {
 
 // ===== NAVBAR SCROLL EFFECT =====
 function updateNavbarOnScroll() {
-    const scrollY = window.scrollY;
-    
-    if (scrollY > 50) {
-        header.classList.add('scrolled');
-    } else {
-        header.classList.remove('scrolled');
-    }
-    
-    // Update active nav link based on scroll position
+    // Manter header com a mesma aparência sempre
+    // Apenas atualizar nav link ativo
     updateActiveNavLink();
 }
 
