@@ -303,13 +303,21 @@ function initScrollAnimations() {
 function setupProfileImagePlaceholder() {
     const profileImg = document.getElementById('profile-img');
     
-    // Create a placeholder SVG if image fails to load
+    // Create a professional placeholder SVG for dark theme
     const createPlaceholder = () => {
         const svg = `
             <svg width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="75" cy="75" r="75" fill="#E8F4FD"/>
-                <circle cx="75" cy="60" r="25" fill="#007ACC"/>
-                <path d="M75 90 C60 90, 45 100, 45 115 L105 115 C105 100, 90 90, 75 90 Z" fill="#007ACC"/>
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#64B5F6;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#FF8A65;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <circle cx="75" cy="75" r="75" fill="#1E1E1E"/>
+                <circle cx="75" cy="75" r="70" fill="url(#grad1)" opacity="0.1"/>
+                <circle cx="75" cy="60" r="28" fill="#64B5F6" opacity="0.8"/>
+                <path d="M75 95 C55 95, 35 108, 35 125 L115 125 C115 108, 95 95, 75 95 Z" fill="#64B5F6" opacity="0.8"/>
+                <text x="75" y="140" text-anchor="middle" fill="#64B5F6" font-family="Inter" font-size="10" font-weight="600">Felipe Delmondes</text>
             </svg>
         `;
         
@@ -367,17 +375,18 @@ function setupProjectImagePlaceholders() {
     const projectImages = document.querySelectorAll('.project-image img');
     
     const createProjectPlaceholder = (index) => {
-        const colors = ['#007ACC', '#FF6B35', '#28A745'];
+        const colors = ['#64B5F6', '#FF8A65', '#81C784'];
         const color = colors[index % colors.length];
         
         const svg = `
             <svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-                <rect width="400" height="200" fill="${color}20"/>
-                <rect x="50" y="50" width="300" height="100" rx="8" fill="${color}"/>
-                <circle cx="80" cy="80" r="8" fill="white"/>
-                <rect x="100" y="75" width="60" height="10" rx="2" fill="white"/>
-                <rect x="100" y="90" width="100" height="6" rx="2" fill="white" opacity="0.7"/>
-                <rect x="280" y="75" width="40" height="20" rx="4" fill="white" opacity="0.8"/>
+                <rect width="400" height="200" fill="#1E1E1E"/>
+                <rect x="50" y="50" width="300" height="100" rx="8" fill="${color}40"/>
+                <rect x="60" y="60" width="280" height="80" rx="6" fill="#121212"/>
+                <circle cx="80" cy="80" r="6" fill="${color}"/>
+                <rect x="95" y="76" width="60" height="8" rx="2" fill="${color}" opacity="0.8"/>
+                <rect x="95" y="88" width="100" height="4" rx="2" fill="${color}" opacity="0.6"/>
+                <rect x="270" y="76" width="50" height="16" rx="4" fill="${color}" opacity="0.7"/>
             </svg>
         `;
         
