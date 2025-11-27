@@ -21,35 +21,56 @@ const translations = {
         'Contato': 'Contato',
         
         // Hero Section
+        'Olá, eu sou': 'Olá, eu sou',
         'Desenvolvedor Backend': 'Desenvolvedor Backend',
         'Ver Projetos': 'Ver Projetos',
+        'Entre em Contato': 'Entre em Contato',
         
         // About Section
         'Sobre Mim': 'Sobre Mim',
+        'Desenvolvedor backend apaixonado por arquitetura e performance': 'Desenvolvedor backend apaixonado por arquitetura e performance',
         'Experiência Profissional': 'Experiência Profissional',
-        'Competências Técnicas Principais': 'Competências Técnicas Principais',
-        'Desenvolvimento Backend (.NET, C#)': 'Desenvolvimento Backend (.NET, C#)',
-        'Bancos de Dados (Oracle, MySQL, SQL Server)': 'Bancos de Dados (Oracle, MySQL, SQL Server)',
-        'APIs RESTful e Microserviços': 'APIs RESTful e Microserviços',
-        'Containerização (Docker, Kubernetes)': 'Containerização (Docker, Kubernetes)',
-        'Microsoft Azure e DevOps': 'Microsoft Azure e DevOps',
-        'CI/CD e Automação de Deploy': 'CI/CD e Automação de Deploy',
+        'Competências Principais': 'Competências Principais',
+        'APIs RESTful': 'APIs RESTful',
+        'Microserviços': 'Microserviços',
+        'DevOps & CI/CD': 'DevOps & CI/CD',
+        'Desenvolvimento de APIs escaláveis e performáticas': 'Desenvolvimento de APIs escaláveis e performáticas',
+        'Arquitetura distribuída na nuvem Azure': 'Arquitetura distribuída na nuvem Azure',
+        'Automação de deploy e monitoramento': 'Automação de deploy e monitoramento',
+        'Anos de Experiência': 'Anos de Experiência',
+        'Projetos Entregues': 'Projetos Entregues',
+        'Tecnologias Dominadas': 'Tecnologias Dominadas',
         
         // Skills Section
         'Habilidades Técnicas': 'Habilidades Técnicas',
+        'Tecnologias que domino e utilizo no dia a dia': 'Tecnologias que domino e utilizo no dia a dia',
         'Desenvolvimento Backend': 'Desenvolvimento Backend',
+        'Banco de Dados': 'Banco de Dados',
+        'Cloud & DevOps': 'Cloud & DevOps',
+        'Ferramentas & Monitoramento': 'Ferramentas & Monitoramento',
+        'Metodologias & BI': 'Metodologias & BI',
         
         // Projects Section
-        'Projetos em Destaque': 'Projetos em Destaque',
+        'Alguns dos meus trabalhos mais recentes': 'Alguns dos meus trabalhos mais recentes',
         'Sistema de Gestão Empresarial': 'Sistema de Gestão Empresarial',
-        'Plataforma de E-commerce': 'Plataforma de E-commerce',
-        'Sistema de Monitoramento': 'Sistema de Monitoramento',
+        'Arquitetura de Microserviços': 'Arquitetura de Microserviços',
+        'Dashboard de Analytics': 'Dashboard de Analytics',
+        'Ver Todos os Projetos no GitHub': 'Ver Todos os Projetos no GitHub',
         
         // Contact Section
-        'Entre em Contato': 'Entre em Contato',
+        'Vamos Trabalhar Juntos': 'Vamos Trabalhar Juntos',
+        'Entre em contato para discutir seu próximo projeto': 'Entre em contato para discutir seu próximo projeto',
+        'Localização': 'Localização',
+        'São Paulo, SP - Brasil': 'São Paulo, SP - Brasil',
         'Nome': 'Nome',
+        'Assunto': 'Assunto',
         'Mensagem': 'Mensagem',
-        'Enviar Mensagem': 'Enviar Mensagem'
+        'Enviar Mensagem': 'Enviar Mensagem',
+        
+        // Footer
+        '© 2024 Felipe Delmondes. Todos os direitos reservados.': '© 2024 Felipe Delmondes. Todos os direitos reservados.',
+        'Desenvolvido com ❤️ usando HTML, CSS e JavaScript': 'Desenvolvido com ❤️ usando HTML, CSS e JavaScript',
+        'Voltar ao topo': 'Voltar ao topo'
     },
     en: {
         // Navigation
@@ -60,35 +81,56 @@ const translations = {
         'Contato': 'Contact',
         
         // Hero Section
+        'Olá, eu sou': 'Hello, I\'m',
         'Desenvolvedor Backend': 'Backend Developer',
         'Ver Projetos': 'View Projects',
+        'Entre em Contato': 'Get In Touch',
         
         // About Section
         'Sobre Mim': 'About Me',
+        'Desenvolvedor backend apaixonado por arquitetura e performance': 'Backend developer passionate about architecture and performance',
         'Experiência Profissional': 'Professional Experience',
-        'Competências Técnicas Principais': 'Main Technical Competencies',
-        'Desenvolvimento Backend (.NET, C#)': 'Backend Development (.NET, C#)',
-        'Bancos de Dados (Oracle, MySQL, SQL Server)': 'Databases (Oracle, MySQL, SQL Server)',
-        'APIs RESTful e Microserviços': 'RESTful APIs and Microservices',
-        'Containerização (Docker, Kubernetes)': 'Containerization (Docker, Kubernetes)',
-        'Microsoft Azure e DevOps': 'Microsoft Azure and DevOps',
-        'CI/CD e Automação de Deploy': 'CI/CD and Deploy Automation',
+        'Competências Principais': 'Main Competencies',
+        'APIs RESTful': 'RESTful APIs',
+        'Microserviços': 'Microservices',
+        'DevOps & CI/CD': 'DevOps & CI/CD',
+        'Desenvolvimento de APIs escaláveis e performáticas': 'Development of scalable and performant APIs',
+        'Arquitetura distribuída na nuvem Azure': 'Distributed architecture on Azure cloud',
+        'Automação de deploy e monitoramento': 'Deploy automation and monitoring',
+        'Anos de Experiência': 'Years of Experience',
+        'Projetos Entregues': 'Projects Delivered',
+        'Tecnologias Dominadas': 'Technologies Mastered',
         
         // Skills Section
         'Habilidades Técnicas': 'Technical Skills',
+        'Tecnologias que domino e utilizo no dia a dia': 'Technologies I master and use daily',
         'Desenvolvimento Backend': 'Backend Development',
+        'Banco de Dados': 'Database',
+        'Cloud & DevOps': 'Cloud & DevOps',
+        'Ferramentas & Monitoramento': 'Tools & Monitoring',
+        'Metodologias & BI': 'Methodologies & BI',
         
         // Projects Section
-        'Projetos em Destaque': 'Featured Projects',
+        'Alguns dos meus trabalhos mais recentes': 'Some of my most recent work',
         'Sistema de Gestão Empresarial': 'Enterprise Management System',
-        'Plataforma de E-commerce': 'E-commerce Platform',
-        'Sistema de Monitoramento': 'Monitoring System',
+        'Arquitetura de Microserviços': 'Microservices Architecture',
+        'Dashboard de Analytics': 'Analytics Dashboard',
+        'Ver Todos os Projetos no GitHub': 'View All Projects on GitHub',
         
         // Contact Section
-        'Entre em Contato': 'Get In Touch',
+        'Vamos Trabalhar Juntos': 'Let\'s Work Together',
+        'Entre em contato para discutir seu próximo projeto': 'Get in touch to discuss your next project',
+        'Localização': 'Location',
+        'São Paulo, SP - Brasil': 'São Paulo, SP - Brazil',
         'Nome': 'Name',
+        'Assunto': 'Subject',
         'Mensagem': 'Message',
-        'Enviar Mensagem': 'Send Message'
+        'Enviar Mensagem': 'Send Message',
+        
+        // Footer
+        '© 2024 Felipe Delmondes. Todos os direitos reservados.': '© 2024 Felipe Delmondes. All rights reserved.',
+        'Desenvolvido com ❤️ usando HTML, CSS e JavaScript': 'Developed with ❤️ using HTML, CSS and JavaScript',
+        'Voltar ao topo': 'Back to top'
     }
 };
 
@@ -104,10 +146,13 @@ function updateLanguageDisplay() {
     // Update HTML lang attribute
     document.documentElement.lang = currentLanguage === 'pt' ? 'pt-BR' : 'en-US';
     
-    // Update page title and meta
-    document.title = currentLanguage === 'pt' ? 
-        'Felipe Delmondes - Desenvolvedor Backend' : 
-        'Felipe Delmondes - Backend Developer';
+    // Update page title
+    const titleElement = document.querySelector('title');
+    if (titleElement) {
+        titleElement.textContent = currentLanguage === 'pt' ? 
+            'Felipe Delmondes - Desenvolvedor Backend' : 
+            'Felipe Delmondes - Backend Developer';
+    }
     
     // Update language toggle button
     const langButton = document.querySelector('.lang-text');
@@ -120,34 +165,65 @@ function updateLanguageDisplay() {
     elementsWithData.forEach(element => {
         const text = currentLanguage === 'pt' ? element.getAttribute('data-pt') : element.getAttribute('data-en');
         if (text) {
-            element.textContent = text;
+            // Handle different element types
+            if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                element.placeholder = text;
+            } else if (element.hasAttribute('aria-label')) {
+                element.setAttribute('aria-label', text);
+            } else if (element.tagName === 'TITLE') {
+                element.textContent = text;
+            } else {
+                // For span elements inside buttons, update content
+                if (element.tagName === 'SPAN' && element.closest('button')) {
+                    element.textContent = text;
+                } else {
+                    element.textContent = text;
+                }
+            }
         }
     });
     
-    // Update placeholder texts
+    // Update form placeholder texts specifically
     const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const subjectInput = document.getElementById('subject');
     const messageInput = document.getElementById('message');
     
     if (nameInput) {
-        nameInput.placeholder = currentLanguage === 'pt' ? 'Seu nome' : 'Your name';
+        nameInput.placeholder = currentLanguage === 'pt' ? 'Seu nome completo' : 'Your full name';
+    }
+    
+    if (emailInput) {
+        emailInput.placeholder = currentLanguage === 'pt' ? 'seu@email.com' : 'your@email.com';
+    }
+    
+    if (subjectInput) {
+        subjectInput.placeholder = currentLanguage === 'pt' ? 'Assunto da mensagem' : 'Message subject';
     }
     
     if (messageInput) {
         messageInput.placeholder = currentLanguage === 'pt' ? 
-            'Sua mensagem aqui...' : 'Your message here...';
+            'Escreva sua mensagem aqui...' : 'Write your message here...';
     }
     
-    // Special case for button spans that might have nested elements
-    const heroButtons = document.querySelectorAll('.hero-actions .btn span');
-    heroButtons.forEach(span => {
-        const parentBtn = span.closest('.btn');
-        if (parentBtn && parentBtn.hasAttribute('data-pt') && parentBtn.hasAttribute('data-en')) {
-            const text = currentLanguage === 'pt' ? 
-                parentBtn.getAttribute('data-pt') : 
-                parentBtn.getAttribute('data-en');
-            span.textContent = text;
-        }
-    });
+    // Update meta description
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+        metaDescription.content = currentLanguage === 'pt' ?
+            'Portfólio de Felipe Delmondes - Desenvolvedor Backend especializado em C#, ASP.NET, Azure e DevOps' :
+            'Felipe Delmondes Portfolio - Backend Developer specialized in C#, ASP.NET, Azure and DevOps';
+    }
+    
+    // Force update of any missed elements
+    setTimeout(() => {
+        const allDataElements = document.querySelectorAll('[data-pt][data-en]');
+        allDataElements.forEach(element => {
+            const text = currentLanguage === 'pt' ? element.getAttribute('data-pt') : element.getAttribute('data-en');
+            if (text && element.textContent !== text && element.tagName !== 'INPUT' && element.tagName !== 'TEXTAREA') {
+                element.textContent = text;
+            }
+        });
+    }, 100);
 }
 
 // Initialize language on page load
