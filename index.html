@@ -29,23 +29,29 @@
                 <div class="nav-logo">
                     <h2>Felipe<span class="logo-accent">.dev</span></h2>
                 </div>
-                <ul class="nav-menu">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link">Início</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#skills" class="nav-link">Habilidades</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#projects" class="nav-link">Projetos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">Contato</a>
-                    </li>
-                </ul>
+                <div class="nav-controls">
+                    <button class="language-toggle" onclick="toggleLanguage()" title="Switch Language">
+                        <i class="fas fa-globe"></i>
+                        <span class="lang-text">EN</span>
+                    </button>
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link" data-pt="Início" data-en="Home">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link" data-pt="Sobre" data-en="About">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#skills" class="nav-link" data-pt="Habilidades" data-en="Skills">Habilidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#projects" class="nav-link" data-pt="Projetos" data-en="Projects">Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link" data-pt="Contato" data-en="Contact">Contato</a>
+                        </li>
+                    </ul>
+                </div>
                 <div class="nav-toggle" id="mobile-menu">
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -65,14 +71,14 @@
                         <h1 class="hero-title">
                             Olá, eu sou <span class="text-accent">Felipe Delmondes</span>
                         </h1>
-                        <h2 class="hero-subtitle">Desenvolvedor Backend</h2>
-                        <p class="hero-description">
+                        <h2 class="hero-subtitle" data-pt="Desenvolvedor Backend" data-en="Backend Developer">Desenvolvedor Backend</h2>
+                        <p class="hero-description" data-pt="Especializado em desenvolvimento de APIs robustas e sistemas backend escaláveis com C#, ASP.NET e tecnologias cloud. Apaixonado por arquitetura de software, performance e integração de dados usando as melhores práticas de DevOps." data-en="Specialized in developing robust APIs and scalable backend systems with C#, ASP.NET and cloud technologies. Passionate about software architecture, performance and data integration using DevOps best practices.">
                             Especializado em desenvolvimento de APIs robustas e sistemas backend escaláveis com C#, ASP.NET e tecnologias cloud. 
                             Apaixonado por arquitetura de software, performance e integração de dados usando as melhores práticas de DevOps.
                         </p>
                         <div class="hero-buttons">
-                            <a href="#contact" class="btn btn-primary">Entre em Contato</a>
-                            <a href="#projects" class="btn btn-outline">Ver Projetos</a>
+                            <a href="#contact" class="btn btn-primary" data-pt="Entre em Contato" data-en="Get In Touch">Entre em Contato</a>
+                            <a href="#projects" class="btn btn-outline" data-pt="Ver Projetos" data-en="View Projects">Ver Projetos</a>
                         </div>
                         <div class="social-links">
                             <a href="https://github.com/felipedelmondes" target="_blank" rel="noopener">
@@ -107,7 +113,7 @@
         <section id="about" class="about">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Sobre Mim</h2>
+                    <h2 class="section-title" data-pt="Sobre Mim" data-en="About Me">Sobre Mim</h2>
                     <p class="section-subtitle">Desenvolvedor backend apaixonado por arquitetura e performance</p>
                 </div>
                 <div class="about-content">
@@ -223,7 +229,7 @@
         <section id="skills" class="skills">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Habilidades Técnicas</h2>
+                    <h2 class="section-title" data-pt="Habilidades Técnicas" data-en="Technical Skills">Habilidades Técnicas</h2>
                     <p class="section-subtitle">Tecnologias que domino e utilizo no dia a dia</p>
                 </div>
                 <div class="skills-content">
@@ -404,7 +410,7 @@
         <section id="projects" class="projects">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Projetos</h2>
+                    <h2 class="section-title" data-pt="Projetos" data-en="Projects">Projetos</h2>
                     <p class="section-subtitle">Alguns dos meus trabalhos mais recentes</p>
                 </div>
                 <div class="projects-grid">
@@ -499,7 +505,7 @@
         <section id="contact" class="contact">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Vamos Trabalhar Juntos</h2>
+                    <h2 class="section-title" data-pt="Vamos Trabalhar Juntos" data-en="Let's Work Together">Vamos Trabalhar Juntos</h2>
                     <p class="section-subtitle">Entre em contato para discutir seu próximo projeto</p>
                 </div>
                 <div class="contact-content">

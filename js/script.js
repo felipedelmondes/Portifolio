@@ -7,6 +7,154 @@ const navLinks = document.querySelectorAll('.nav-link');
 const contactForm = document.getElementById('contact-form');
 const skillItems = document.querySelectorAll('.skill-item');
 
+// ===== LANGUAGE SYSTEM =====
+let currentLanguage = localStorage.getItem('portfolioLanguage') || 'pt';
+
+// Translations object
+const translations = {
+    pt: {
+        // Navigation
+        'Início': 'Início',
+        'Sobre': 'Sobre',
+        'Habilidades': 'Habilidades',
+        'Projetos': 'Projetos',
+        'Contato': 'Contato',
+        
+        // Hero Section
+        'Desenvolvedor Backend': 'Desenvolvedor Backend',
+        'Ver Projetos': 'Ver Projetos',
+        
+        // About Section
+        'Sobre Mim': 'Sobre Mim',
+        'Experiência Profissional': 'Experiência Profissional',
+        'Competências Técnicas Principais': 'Competências Técnicas Principais',
+        'Desenvolvimento Backend (.NET, C#)': 'Desenvolvimento Backend (.NET, C#)',
+        'Bancos de Dados (Oracle, MySQL, SQL Server)': 'Bancos de Dados (Oracle, MySQL, SQL Server)',
+        'APIs RESTful e Microserviços': 'APIs RESTful e Microserviços',
+        'Containerização (Docker, Kubernetes)': 'Containerização (Docker, Kubernetes)',
+        'Microsoft Azure e DevOps': 'Microsoft Azure e DevOps',
+        'CI/CD e Automação de Deploy': 'CI/CD e Automação de Deploy',
+        
+        // Skills Section
+        'Habilidades Técnicas': 'Habilidades Técnicas',
+        'Desenvolvimento Backend': 'Desenvolvimento Backend',
+        
+        // Projects Section
+        'Projetos em Destaque': 'Projetos em Destaque',
+        'Sistema de Gestão Empresarial': 'Sistema de Gestão Empresarial',
+        'Plataforma de E-commerce': 'Plataforma de E-commerce',
+        'Sistema de Monitoramento': 'Sistema de Monitoramento',
+        
+        // Contact Section
+        'Entre em Contato': 'Entre em Contato',
+        'Nome': 'Nome',
+        'Mensagem': 'Mensagem',
+        'Enviar Mensagem': 'Enviar Mensagem'
+    },
+    en: {
+        // Navigation
+        'Início': 'Home',
+        'Sobre': 'About',
+        'Habilidades': 'Skills',
+        'Projetos': 'Projects',
+        'Contato': 'Contact',
+        
+        // Hero Section
+        'Desenvolvedor Backend': 'Backend Developer',
+        'Ver Projetos': 'View Projects',
+        
+        // About Section
+        'Sobre Mim': 'About Me',
+        'Experiência Profissional': 'Professional Experience',
+        'Competências Técnicas Principais': 'Main Technical Competencies',
+        'Desenvolvimento Backend (.NET, C#)': 'Backend Development (.NET, C#)',
+        'Bancos de Dados (Oracle, MySQL, SQL Server)': 'Databases (Oracle, MySQL, SQL Server)',
+        'APIs RESTful e Microserviços': 'RESTful APIs and Microservices',
+        'Containerização (Docker, Kubernetes)': 'Containerization (Docker, Kubernetes)',
+        'Microsoft Azure e DevOps': 'Microsoft Azure and DevOps',
+        'CI/CD e Automação de Deploy': 'CI/CD and Deploy Automation',
+        
+        // Skills Section
+        'Habilidades Técnicas': 'Technical Skills',
+        'Desenvolvimento Backend': 'Backend Development',
+        
+        // Projects Section
+        'Projetos em Destaque': 'Featured Projects',
+        'Sistema de Gestão Empresarial': 'Enterprise Management System',
+        'Plataforma de E-commerce': 'E-commerce Platform',
+        'Sistema de Monitoramento': 'Monitoring System',
+        
+        // Contact Section
+        'Entre em Contato': 'Get In Touch',
+        'Nome': 'Name',
+        'Mensagem': 'Message',
+        'Enviar Mensagem': 'Send Message'
+    }
+};
+
+// Toggle language function
+function toggleLanguage() {
+    currentLanguage = currentLanguage === 'pt' ? 'en' : 'pt';
+    localStorage.setItem('portfolioLanguage', currentLanguage);
+    updateLanguageDisplay();
+}
+
+// Update language display
+function updateLanguageDisplay() {
+    // Update HTML lang attribute
+    document.documentElement.lang = currentLanguage === 'pt' ? 'pt-BR' : 'en-US';
+    
+    // Update page title and meta
+    document.title = currentLanguage === 'pt' ? 
+        'Felipe Delmondes - Desenvolvedor Backend' : 
+        'Felipe Delmondes - Backend Developer';
+    
+    // Update language toggle button
+    const langButton = document.querySelector('.lang-text');
+    if (langButton) {
+        langButton.textContent = currentLanguage === 'pt' ? 'EN' : 'PT';
+    }
+    
+    // Update all elements with data attributes
+    const elementsWithData = document.querySelectorAll('[data-pt][data-en]');
+    elementsWithData.forEach(element => {
+        const text = currentLanguage === 'pt' ? element.getAttribute('data-pt') : element.getAttribute('data-en');
+        if (text) {
+            element.textContent = text;
+        }
+    });
+    
+    // Update placeholder texts
+    const nameInput = document.getElementById('name');
+    const messageInput = document.getElementById('message');
+    
+    if (nameInput) {
+        nameInput.placeholder = currentLanguage === 'pt' ? 'Seu nome' : 'Your name';
+    }
+    
+    if (messageInput) {
+        messageInput.placeholder = currentLanguage === 'pt' ? 
+            'Sua mensagem aqui...' : 'Your message here...';
+    }
+    
+    // Special case for button spans that might have nested elements
+    const heroButtons = document.querySelectorAll('.hero-actions .btn span');
+    heroButtons.forEach(span => {
+        const parentBtn = span.closest('.btn');
+        if (parentBtn && parentBtn.hasAttribute('data-pt') && parentBtn.hasAttribute('data-en')) {
+            const text = currentLanguage === 'pt' ? 
+                parentBtn.getAttribute('data-pt') : 
+                parentBtn.getAttribute('data-en');
+            span.textContent = text;
+        }
+    });
+}
+
+// Initialize language on page load
+document.addEventListener('DOMContentLoaded', function() {
+    updateLanguageDisplay();
+});
+
 // ===== MOBILE NAVIGATION =====
 function toggleMobileMenu() {
     mobileMenu.classList.toggle('active');
